@@ -29,3 +29,21 @@ C'est là que réside votre code source.
 | **Array (Tableau)** | `[1, 2, 3]` | **Uniforme.** Même type et taille fixe. |
 
 ---
+
+## 📢 L'Affichage avec `println!`
+
+En Rust, on n'affiche pas une variable directement. On utilise un **gabarit** (template) avec des accolades `{}`.
+
+### 💡 Pourquoi les accolades `{}` ?
+1. **Sécurité :** Le compilateur vérifie *avant* le lancement que la donnée est transformable en texte.
+2. **Contrôle :** Tu choisis exactement comment les données apparaissent.
+3. **Vitesse :** Rust prépare l'affichage de manière optimisée pour être aussi rapide que le C++.
+
+---
+
+### 🛠️ Les deux modes d'affichage
+
+| Syntaxe | Nom | Explication Simple |
+| :--- | :--- | :--- |
+| `{}` | **Display** (Affichage) | Pour l'**utilisateur final**. C'est un affichage "propre" (ex: juste le texte ou le chiffre). |
+| `{:?}` | **Debug** (Débogage) | Pour le **développeur**. C'est une vision "sous le capot" qui montre les détails techniques (guillemets, virgules, structures). |
